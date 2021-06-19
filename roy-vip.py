@@ -220,7 +220,7 @@ def menu():
     print((p+"[*] ============================================="))
     print((p+"["+k+"•"+p+"]"+p+" ID FB Anda	: "+k+""+id))
     print((p+"["+k+"•"+p+"]"+p+" IP Anda	: "+k+""+ip))
-    print((p+"["+k+"•"+p+"]"+p+" Status		: "+h+"Premium"))
+    print((p+"["+k+"•"+p+"]"+p+" Status	: "+h+"Premium"))
     print((p+"["+k+"•"+p+"]"+p+" Bergabung	: "+k+""+durasi))
     print((p+"[*] ============================================="))
     print((p+"[ "+k+"Menu Pilihan ]"+p))
