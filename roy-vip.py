@@ -220,7 +220,7 @@ def menu():
     print((p+"[*] ---------------------------------------------"))
     print((p+"["+k+"•"+p+"]"+p+" Your ID : "+k+""+id))
     print((p+"["+k+"•"+p+"]"+p+" Your IP : "+k+""+ip))
-    print((p+"["+k+"•"+p+"]"+p+" Status  : "+h+""Premium"+p))
+    print((p+"["+k+"•"+p+"]"+p+" Status  : "+h+"Premium"))
     print((p+"["+k+"•"+p+"]"+p+" Joined  : "+k+""+durasi))
     print((p+"[*] ---------------------------------------------"))
     print((p+"\n["+k+"1"+p+"]"+p+" Crack From Public/Friend"))
