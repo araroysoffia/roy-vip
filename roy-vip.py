@@ -36,7 +36,7 @@ else:
 ### HEADERS ###
 
 def banner():
-    print("""╦═╗╔═╗╦ ╦   ╦  ╦╦╔═╗\n╠╦╝║ ║╚╦╝───╚╗╔╝║╠═╝\n╩╚═╚═╝ ╩     ╚╝ ╩╩  """)
+    print("""\x1b[0;32m╦═╗╔═╗╦ ╦   ╦  ╦╦╔═╗\n╠╦╝║ ║╚╦╝───╚╗╔╝║╠═╝\n╩╚═╚═╝ ╩     ╚╝ ╩╩  """)
 
 host="https://mbasic.facebook.com"
 ips=None
@@ -210,19 +210,26 @@ def menu():
     ip = requests.get("https://api.ipify.org").text
     os.system("clear")
     banner()
-    print((k+"\n[ "+p+"Welcome "+a["name"]+k+" ]"+p))
-    print((k+"\n["+p+"•"+k+"]"+p+" Your ID : "+id))
-    print((k+"["+p+"•"+k+"]"+p+" Your IP : "+ip))
-    print((k+"["+p+"•"+k+"]"+p+" Status  : "+h+"Premium"+p))
-    print((k+"["+p+"•"+k+"]"+p+" Joined  : "+durasi))
-    print((k+"\n["+p+"1"+k+"]"+p+" Crack From Public/Friend"))
-    print((k+"["+p+"2"+k+"]"+p+" Crack From Followers"))
-    print((k+"["+p+"3"+k+"]"+p+" Crack From Likers Post"))
-    print((k+"["+p+"4"+k+"]"+p+" Crack By Phone Number"))
-    print((k+"["+p+"5"+k+"]"+p+" Crack By Email"))
-    print((k+"["+p+"6"+k+"]"+p+" Get Data Target"))
-    print((k+"["+p+"7"+k+"]"+p+" Result Crack"))
-    print((k+"["+p+"0"+k+"]"+p+" Logout"))
+    print("["+H+"ROY-VIP Log Opera Mini]")
+    print((p+"[*] ---------------------------------------------"))
+    print((p+"["+o+"*"+p+"]"+p+" Author		: "+k+"Roy Octa Firdaus"))
+    print((p+"["+o+"*"+p+"]"+p+" Facebook	: "+k+"facebook.com/jbfbold"))
+    print((p+"["+o+"*"+p+"]"+p+" Whatsapp	: "+k+"+6281318306972"))
+    print((p+"[*] ---------------------------------------------"))
+    print((p+"\n[ "+k+"Welcome "+a["name"]+p+" ]"+p))
+    print((p+"\n["+k+"•"+p+"]"+p+" Your ID : "+id))
+    print((p+"["+k+"•"+p+"]"+p+" Your IP : "+ip))
+    print((p+"["+k+"•"+p+"]"+p+" Status  : "+h+"Premium"+p))
+    print((p+"["+k+"•"+p+"]"+p+" Joined  : "+durasi))
+    print((p+"[*] ---------------------------------------------"))
+    print((p+"\n["+k+"1"+p+"]"+p+" Crack From Public/Friend"))
+    print((p+"["+k+"2"+p+"]"+p+" Crack From Followers"))
+    print((p+"["+k+"3"+p+"]"+p+" Crack From Likers Post"))
+    print((p+"["+k+"4"+p+"]"+p+" Crack By Phone Number"))
+    print((p+"["+k+"5"+p+"]"+p+" Crack By Email"))
+    print((p+"["+k+"6"+p+"]"+p+" Get Data Target"))
+    print((p+"["+k+"7"+p+"]"+k+" Result Crack"))
+    print((p+"["+k+"0"+p+"]"+m+" Logout"))
     choose_menu()
 
 def choose_menu():
