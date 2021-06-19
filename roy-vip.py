@@ -300,7 +300,7 @@ def publik():
 			print((p+"["+k+"*"+p+"]"+p+" Name : "+op["name"]))
 		except KeyError:
 			print((p+"["+k+"!"+p+"]"+p+" ID Tidak Ditemukan"))
-			print((o+"\n»»» "+k+"ENTER Untuk Kembali"+p+" «««"+o))
+			print((o+"\n»»» "+k+"ENTER Untuk Kembali"+o+" «««"+o))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/friends?limit=10000&access_token="+toket)
 		id = []
@@ -792,7 +792,7 @@ def ress():
         os.system("cat cp.txt")
     except IOError:
         print((p+"["+k+"!"+p+"]"+p+" Tidak Ada Hasil Ditemukan"))
-    input(o+"\n»»» "+k+"ENTER Untuk Kembali"+o+" «««)
+    input(o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««")
     menu()
 
 if __name__=="__main__":
