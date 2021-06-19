@@ -118,7 +118,7 @@ def gets_dict_cookies(cookies):
 def logs():
   os.system("clear")
   banner()
-  print((p+"\n[ ❓"+o+"Metode Login "+p+"]"+p))
+  print((p+"\n[❓ "+o+"Metode Login "+p+"]"+p))
   print((p+"["+k+"1"+p+"]"+p+" Login Token"))
   print((p+"["+k+"2"+p+"]"+p+" Login Cookies"))
   print((p+"["+m+"0"+p+"]"+p+" "+m+"Exit"))
@@ -211,20 +211,20 @@ def menu():
     ip = requests.get("https://api.ipify.org").text
     os.system("clear")
     banner()
-    print("[⭐⭐⭐"+h+"ROY-VIP SC s7i Opera Mini⭐⭐⭐]")
-    print((p+"[💡] ============================================="))
-    print((p+"["+o+"⭐"+p+"]"+p+" Author		👉 "+k+"Roy Octa Firdaus"))
+    print("⭐⭐⭐"+h+"ROY-VIP SC s7i Opera Mini⭐⭐⭐")
+    print((p+"[*] ============================================="))
+    print((p+"["+o+"⭐"+p+"]"+p+" Author	👉 "+k+"Roy Octa Firdaus"))
     print((p+"["+o+"⭐"+p+"]"+p+" Facebook	👉 "+k+"facebook.com/JbFbOld"))
     print((p+"["+o+"⭐"+p+"]"+p+" Whatsapp	👉 "+k+"+6281318306972"))
-    print((p+"[💡] ============================================="))
-    print((p+"[ 👏"+k+"Selamat datang "+a["name"]+p+" ]"+p))
-    print((p+"[💡] ============================================="))
+    print((p+"[*] ============================================="))
+    print((p+"[ "+k+"Selamat datang "+a["name"]+p+" ]"+p))
+    print((p+"[*] ============================================="))
     print((p+"["+o+"✔"+p+"]"+p+" ID FB Anda	👉 "+k+""+id))
     print((p+"["+o+"✔"+p+"]"+p+" IP Anda	👉 "+k+""+ip))
-    print((p+"["+o+"✔"+p+"]"+p+" Status		👉 "+h+"Premium"))
+    print((p+"["+o+"✔"+p+"]"+p+" Status	👉 "+h+"Premium"))
     print((p+"["+o+"✔"+p+"]"+p+" Bergabung	👉 "+k+""+durasi))
-    print((p+"[💡] ============================================="))
-    print((p+"[ ❓"+o+"Menu Pilihan "+p+"]"+p))
+    print((p+"[*] ============================================="))
+    print((p+"[❓ "+o+"Menu Pilihan "+p+"]"+p))
     print((p+"["+k+"1"+p+"]"+p+" Crack Dari Teman/Publik"))
     print((p+"["+k+"2"+p+"]"+p+" Crack Dari Followers FB"))
     print((p+"["+k+"3"+p+"]"+p+" Crack Dari Liker Postingan"))
@@ -233,7 +233,7 @@ def menu():
     print((p+"["+k+"6"+p+"]"+p+" Cek Data FB"))
     print((p+"["+k+"7"+p+"]"+k+" Cek Hasil Crack"))
     print((p+"["+m+"0"+p+"]"+m+" Logout/Keluar"))
-    print((p+"[💡] ============================================="))
+    print((p+"[*] ============================================="))
     choose_menu()
 
 def choose_menu():
@@ -267,7 +267,7 @@ def choose_menu():
 		menu()	
 
 def pilihcrack(file):
-  print((p+"\n[ ❓"+o+"Pilih Metode Login : "+p+"]"+p))
+  print((p+"\n[❓ "+o+"Pilih Metode Login : "+p+"]"+p))
   print((p+"["+k+"1"+p+"]"+p+" MBASIC ("+h+"Direkomedasikan"+p+")"))
   print((p+"["+k+"2"+p+"]"+p+" MBASIC + TTL"))
   krah=input(p+"\n["+k+"❓"+p+"]"+p+" Pilih 👉 ")
@@ -501,11 +501,11 @@ def target():
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((p+"["+k+"⭐"+p+"]"+p+" Website	👉 "+op["website"]))
+				print((p+"["+k+"⭐"+p+"]"+p+" Website		👉 "+op["website"]))
 			except KeyError:
-				print((p+"["+k+"⭐"+p+"]"+p+" Website	👉 -"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Website		👉 -"))
 			except IOError:
-				print((p+"["+k+"⭐"+p+"]"+p+" Website	👉 -"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Website		👉 -"))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
