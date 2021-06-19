@@ -290,7 +290,7 @@ def publik():
 		os.system("rm -rf login.txt")
 		logs()
 	try:
-		print((p+"\n["+k+"•"+p+"]"+p+" Type \'me\' To Dump From Friendlist"))
+		print((p+"\n["+k+"•"+p+"]"+p+" Klik \'me\' Untuk Crack Dari List Teman"))
 		idt = input(p+"["+k+"•"+p+"]"+p+" User ID Target : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
@@ -446,30 +446,30 @@ def target():
 		os.system("rm -rf login.txt")
 		login()
 	try:
-		idt = input(p+"\n["+k+"•"+p+"]"+p+" ID Target        : ")
+		idt = input(p+"\n["+k+"•"+p+"]"+p+" ID Target	: ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((p+"["+k+"•"+p+"]"+p+" Name Account     : "+op["name"]))
-			print((p+"["+k+"•"+p+"]"+p+" Username         : "+op["username"]))
+			print((p+"["+k+"•"+p+"]"+p+" Name Account	: "+op["name"]))
+			print((p+"["+k+"•"+p+"]"+p+" Username	: "+op["username"]))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((p+"["+k+"•"+p+"]"+p+" Email            : "+op["email"]))
+				print((p+"["+k+"•"+p+"]"+p+" Email	: "+op["email"]))
 			except KeyError:
-				print((p+"["+k+"•"+p+"]"+p+" Email            : -"))
+				print((p+"["+k+"•"+p+"]"+p+" Email	: -"))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((p+"["+k+"•"+p+"]"+p+" Date Of Birth    : "+op["birthday"]))
+				print((p+"["+k+"•"+p+"]"+p+" Date Of Birth	: "+op["birthday"]))
 			except KeyError:
-				print((p+"["+k+"•"+p+"]"+p+" Date Of Birth    : -"))
+				print((p+"["+k+"•"+p+"]"+p+" Date Of Birth	: -"))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((p+"["+k+"•"+p+"]"+p+" Gender           : "+op["gender"]))
+				print((p+"["+k+"•"+p+"]"+p+" Gender	: "+op["gender"]))
 			except KeyError:
-				print((p+"["+k+"•"+p+"]"+p+" Gender           : -"))
+				print((p+"["+k+"•"+p+"]"+p+" Gender	: -"))
 			try:
 				r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 				id = []
@@ -480,9 +480,9 @@ def target():
 					id.append(i["id"])
 					ys.write(i["id"])
 				ys.close()
-				print((p+"["+k+"•"+p+"]"+p+" Total Friend     : %s"%(len(id))))
+				print((p+"["+k+"•"+p+"]"+p+" Total Frienn	: %s"%(len(id))))
 			except KeyError:
-				print((p+"["+k+"•"+p+"]"+p+" Total Friend     : -"))
+				print((p+"["+k+"•"+p+"]"+p+" Total Friend	: -"))
 			try:
 				a=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+toket)
 				id = []
@@ -493,25 +493,25 @@ def target():
 					id.append(c["id"])
 					jw.write(c["id"])
 				jw.close()
-				print((p+"["+k+"•"+p+"]"+p+" Total Follower   : %s"%(len(id))))
+				print((p+"["+k+"•"+p+"]"+p+" Total Follower	: %s"%(len(id))))
 			except KeyError:
-				print((p+"["+k+"•"+p+"]"+p+" Total Follower   : -"))
+				print((p+"["+k+"•"+p+"]"+p+" Total Follower	: -"))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((p+"["+k+"•"+p+"]"+p+" Website          : "+op["website"]))
+				print((p+"["+k+"•"+p+"]"+p+" Website	: "+op["website"]))
 			except KeyError:
-				print((p+"["+k+"•"+p+"]"+p+" Website          : -"))
+				print((p+"["+k+"•"+p+"]"+p+" Website	: -"))
 			except IOError:
-				print((p+"["+k+"•"+p+"]"+p+" Website          : -"))
+				print((p+"["+k+"•"+p+"]"+p+" Website	: -"))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((p+"["+k+"•"+p+"]"+p+" Update Time      : "+op["updated_time"]))
+				print((p+"["+k+"•"+p+"]"+p+" Update Time	: "+op["updated_time"]))
 			except KeyError:
-				print((p+"["+k+"•"+p+"]"+p+" Update Time      : -"))
+				print((p+"["+k+"•"+p+"]"+p+" Update Time	: -"))
 			except IOError:
-				print((p+"["+k+"•"+p+"]"+p+" Update Time      : -"))
+				print((p+"["+k+"•"+p+"]"+p+" Update Time	: -"))
 			input(p+"\n[ "+k+"Back"+p+" ]"+p)
 			menu()
 		except KeyError:
