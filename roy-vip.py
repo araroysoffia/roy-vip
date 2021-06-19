@@ -788,12 +788,12 @@ def ress():
     print((p+"["+o+"*"+p+"]"+p+" Status	: "+h+"Premium"))
     print((p+"["+o+"*"+p+"]"+p+" Bergabung	: "+k+""+durasi))
     print((p+"[*] ============================================="))
-    print((p+"\n[ "+o+"Hasil Crack" "+h+"OK"+p+" ]"+p))
+    print((p+"\n[ "+o+"Hasil Crack "+h+"OK"+p+" ]"+p))
     try:
         os.system("cat ok.txt")
     except IOError:
         print((p+"["+k+"!"+p+"]"+p+" Tidak Ada Hasil Ditemukan"))
-    print((p+"\n[ "+o+"Hasil Crack" "+k+"CP"+p+" ]"+p))
+    print((p+"\n[ "+o+"Hasil Crack "+k+"CP"+p+" ]"+p))
     try:
         os.system("cat cp.txt")
     except IOError:
