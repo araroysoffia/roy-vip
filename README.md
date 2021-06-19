@@ -9,7 +9,6 @@ Token FB
 3) nama12345
 4) sayang
 5) bismillah
-6) 123456
 ````
 # Perintah
 ````php
