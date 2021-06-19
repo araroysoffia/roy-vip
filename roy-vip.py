@@ -775,18 +775,30 @@ def results(Dapunta,Krahkrah):
 def ress():
     os.system("clear")
     banner()
-    print((p+"\n[ "+o+"Hasil Crack"+p+" ]"+p))
-    print((p+"\n[ "+h+"OK"+p+" ]"+p))
+    print("["+h+"ROY-VIP SC s7i Opera Mini]")
+    print((p+"[*] ============================================="))
+    print((p+"["+o+"*"+p+"]"+p+" Author	: "+k+"Roy Octa Firdaus"))
+    print((p+"["+o+"*"+p+"]"+p+" Facebook	: "+k+"facebook.com/jbfbold"))
+    print((p+"["+o+"*"+p+"]"+p+" Whatsapp	: "+k+"+6281318306972"))
+    print((p+"[*] ============================================="))
+    print((p+"[ "+k+"Selamat datang "+a["name"]+p+" ]"+p))
+    print((p+"[*] ============================================="))
+    print((p+"["+o+"*"+p+"]"+p+" ID FB Anda	: "+k+""+id))
+    print((p+"["+o+"*"+p+"]"+p+" IP Anda	: "+k+""+ip))
+    print((p+"["+o+"*"+p+"]"+p+" Status	: "+h+"Premium"))
+    print((p+"["+o+"*"+p+"]"+p+" Bergabung	: "+k+""+durasi))
+    print((p+"[*] ============================================="))
+    print((p+"\n[ "+o+"Hasil Crack" "+h+"OK"+p+" ]"+p))
     try:
         os.system("cat ok.txt")
     except IOError:
         print((p+"["+k+"!"+p+"]"+p+" Tidak Ada Hasil Ditemukan"))
-    print((p+"\n[ "+k+"CP"+p+" ]"+p))
+    print((p+"\n[ "+o+"Hasil Crack" "+k+"CP"+p+" ]"+p))
     try:
         os.system("cat cp.txt")
     except IOError:
         print((p+"["+k+"!"+p+"]"+p+" Tidak Ada Hasil Ditemukan"))
-    input(p+"\n[ "+k+"ENTER Untuk Kembali"+p+" ]"+p)
+    input(p+"\n>> "+k+"ENTER Untuk Kembali"+p+" <<"+p)
     menu()
 
 if __name__=="__main__":
