@@ -267,8 +267,9 @@ def choose_menu():
 		menu()	
 
 def pilihcrack(file):
-  print((p+"\n["+k+"1"+p+"]"+p+" Mbasic ("+h+"Direkomedasikan"+p+")"))
-  print((p+"["+k+"2"+p+"]"+p+" Mbasic + TTL"))
+  print((p+"[ "+o+"Pilih Metode Login "+p+"]"+p))
+  print((p+"\n["+k+"1"+p+"]"+p+" MBASIC ("+h+"Direkomedasikan"+p+")"))
+  print((p+"["+k+"2"+p+"]"+p+" MBASIC + TTL"))
   krah=input(p+"\n["+k+"?"+p+"]"+p+" Pilih : ")
   if krah in[""]:
     print((p+"["+k+"!"+p+"]"+p+" Maaf Salah"))
@@ -624,7 +625,7 @@ class crack:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((p+"\n["+k+"*"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
+				print((p+"\n["+k+"*"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"*"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
@@ -636,7 +637,7 @@ class crack:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((p+"\n["+k+"*"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
+			print((p+"\n["+k+"*"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"*"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -713,7 +714,7 @@ class crackttl:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((p+"\n["+k+"*"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
+				print((p+"\n["+k+"*"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"*"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
@@ -725,7 +726,7 @@ class crackttl:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((p+"\n["+k+"*"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
+			print((p+"\n["+k+"*"+p+"]"+p+" Crack by ROY sedang berjalan..."+p+"\n["+k+"*"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"*"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
