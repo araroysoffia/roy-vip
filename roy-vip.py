@@ -792,7 +792,7 @@ def ress():
         os.system("cat cp.txt")
     except IOError:
         print((p+"["+k+"!"+p+"]"+p+" Tidak Ada Hasil Ditemukan"))
-    input(o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««")
+    input(o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««)
     menu()
 
 if __name__=="__main__":
