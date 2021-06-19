@@ -267,8 +267,8 @@ def choose_menu():
 		menu()	
 
 def pilihcrack(file):
-  print((p+"[ "+o+"Pilih Metode Login "+p+"]"+p))
-  print((p+"\n["+k+"1"+p+"]"+p+" MBASIC ("+h+"Direkomedasikan"+p+")"))
+  print((p+"\n[ "+o+"Pilih Metode Login : "+p+"]"+p))
+  print((p+"["+k+"1"+p+"]"+p+" MBASIC ("+h+"Direkomedasikan"+p+")"))
   print((p+"["+k+"2"+p+"]"+p+" MBASIC + TTL"))
   krah=input(p+"\n["+k+"?"+p+"]"+p+" Pilih : ")
   if krah in[""]:
