@@ -210,7 +210,7 @@ def menu():
     ip = requests.get("https://api.ipify.org").text
     os.system("clear")
     banner()
-    print("["+H+"ROY-VIP Log Opera Mini]")
+    print("["+h+"ROY-VIP Log Opera Mini]")
     print((p+"[*] ---------------------------------------------"))
     print((p+"["+o+"*"+p+"]"+p+" Author		: "+k+"Roy Octa Firdaus"))
     print((p+"["+o+"*"+p+"]"+p+" Facebook	: "+k+"facebook.com/jbfbold"))
