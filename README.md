@@ -23,5 +23,6 @@ $ pip install futures
 $ rm -rf roy-vip
 $ git clone https://github.com/royofficial/roy-vip
 $ cd roy-vip
+$ git pull
 $ python roy-vip.py
 ````
