@@ -781,13 +781,6 @@ def ress():
     print((p+"["+o+"*"+p+"]"+p+" Facebook	: "+k+"facebook.com/jbfbold"))
     print((p+"["+o+"*"+p+"]"+p+" Whatsapp	: "+k+"+6281318306972"))
     print((p+"[*] ============================================="))
-    print((p+"[ "+k+"Selamat datang "+a["name"]+p+" ]"+p))
-    print((p+"[*] ============================================="))
-    print((p+"["+o+"*"+p+"]"+p+" ID FB Anda	: "+k+""+id))
-    print((p+"["+o+"*"+p+"]"+p+" IP Anda	: "+k+""+ip))
-    print((p+"["+o+"*"+p+"]"+p+" Status	: "+h+"Premium"))
-    print((p+"["+o+"*"+p+"]"+p+" Bergabung	: "+k+""+durasi))
-    print((p+"[*] ============================================="))
     print((p+"\n[ "+o+"Hasil Crack "+h+"OK"+p+" ]"+p))
     try:
         os.system("cat ok.txt")
