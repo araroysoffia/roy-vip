@@ -118,10 +118,10 @@ def gets_dict_cookies(cookies):
 def logs():
   os.system("clear")
   banner()
-  print((p+"\n[ "+o+"Metode Login ]"+p))
+  print((p+"\n[ "+o+"Metode Login "+p+"]"+p))
   print((p+"["+k+"1"+p+"]"+p+" Login Token"))
   print((p+"["+k+"2"+p+"]"+p+" Login Cookies"))
-  print((p+"["+k+"0"+p+"]"+p+" Exit"))
+  print((p+"["+m+"0"+p+"]"+p+" "+m+"Exit"))
   sek=input(p+"\n["+k+"?"+p+"]"+p+" Pilih : ")
   if sek=="":
     print((p+"\n["+k+"!"+p+"]"+p+" Isi yang benar!!!"))
