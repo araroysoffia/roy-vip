@@ -300,7 +300,7 @@ def publik():
 			print((p+"["+k+"⭐"+p+"]"+p+" Name 👉 "+k+""+op["name"]))
 		except KeyError:
 			print((p+"["+k+"❌"+p+"]"+p+" "+m+"ID Tidak Ditemukan"))
-			print((o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««"))
+			print((o+"\n»»» "+k+"Coba Kembali..." +o+"«««"))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/friends?limit=10000&access_token="+toket)
 		id = []
@@ -331,7 +331,7 @@ def follow():
 			print((p+"["+k+"⭐"+p+"]"+p+" Name 👉"+k+" "+op["name"]))
 		except KeyError:
 			print((p+"["+k+"❌"+p+"]"+p+" "+m+"ID Tidak Ditemukan"))
-			print((o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««"))
+			print((o+"\n»»» "+k+"Coba Kembali..." +o+"«««"))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+toket)
 		id = []
@@ -362,7 +362,7 @@ def likers():
 			print((p+"["+k+"⭐"+p+"]"+p+" Name 👉"+k+" "+op["name"]))
 		except KeyError:
 			print((p+"["+k+"❌"+p+"]"+p+" "+m+"ID Tidak Ditemukan"))
-			print((o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««"))
+			print((o+"\n»»» "+k+"Coba Kembali..." +o+"«««"))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/likes?limit=100000&access_token="+toket)
 		id = []
