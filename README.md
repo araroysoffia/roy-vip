@@ -8,7 +8,6 @@ Token FB
 2) nama123
 3) nama12345
 4) sayang
-5) bismillah
 ````
 # Perintah
 ````php
