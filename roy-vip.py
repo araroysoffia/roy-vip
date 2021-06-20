@@ -217,7 +217,7 @@ def menu():
     print((p+"["+o+"⭐"+p+"]"+p+" Facebook	👉 "+k+"facebook.com/JbFbOld"))
     print((p+"["+o+"⭐"+p+"]"+p+" Whatsapp	👉 "+k+"+6281318306972"))
     print((p+"================================================="))
-    print((p+"[ "+k+"Selamat datang "+a["name"]+p+" ]"+p))
+    print((p+"[ Selamat datang "+k+""+a["name"]+p+" ]"+p))
     print((p+"================================================="))
     print((p+"["+h+"✔"+p+"]"+p+" ID FB Anda	👉 "+k+""+id))
     print((p+"["+h+"✔"+p+"]"+p+" IP Anda	👉 "+k+""+ip))
