@@ -542,8 +542,6 @@ def generate(text):
 				if "indonesia" in ips:
 					results.append("sayang")
 					results.append("bismillah")
-					results.append("indonesia")
-					results.append("rahasia")
 	return results
 
 ### BRUTE CRACK ###
@@ -585,10 +583,10 @@ class crack:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
-		print((p+"\n["+h+"✔"+p+"]"+p+" Kata Sandi Default : "+k+"nama,nama123,nama12345,sayang,bismillah,indonesia,rahasia"))
+		print((p+"\n["+h+"✔"+p+"]"+p+" Kata Sandi Default : "+k+"nama,nama123,nama12345,sayang,bismillah"))
 		print((p+"["+k+"⭐"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
 		while True:
-			f=input(p+"["+k+"❓"+p+"]"+p+" Pilih 👉"+k+" ")
+			f=input(p+"\n["+k+"❓"+p+"]"+p+" Pilih 👉"+k+" ")
 			if f=="":continue
 			elif f=="m":
 				try:
@@ -675,10 +673,10 @@ class crackttl:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
-		print((p+"\n["+h+"✔"+p+"]"+p+" Kata Sandi Default : "+k+"nama,nama123,nama12345,sayang,bismillah,indonesia,rahasia"))
+		print((p+"\n["+h+"✔"+p+"]"+p+" Kata Sandi Default : "+k+"nama,nama123,nama12345,sayang,bismillah"))
 		print((p+"["+k+"⭐"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
 		while True:
-			f=input(p+"["+k+"❓"+p+"]"+p+" Pilih 👉"+k+" ")
+			f=input(p+"\n["+k+"❓"+p+"]"+p+" Pilih 👉"+k+" ")
 			if f=="":continue
 			elif f=="m":
 				try:
