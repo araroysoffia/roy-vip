@@ -585,8 +585,8 @@ class crack:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
-		print((p+"\n["+h+"✔"+p+"]"+p+" Default : "+k+"nama,nama123,nama12345,sayang,bismillah,indonesia,rahasia"))
-		print((p+"\n["+k+"⭐"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
+		print((p+"\n["+h+"✔"+p+"]"+p+" Kata Sandi Default : "+k+"nama,nama123,nama12345,sayang,bismillah,indonesia,rahasia"))
+		print((p+"["+k+"⭐"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
 		while True:
 			f=input(p+"["+k+"❓"+p+"]"+p+" Pilih 👉"+k+" ")
 			if f=="":continue
@@ -675,8 +675,8 @@ class crackttl:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
-		print((p+"\n["+h+"✔"+p+"]"+p+" Default : "+k+"nama,nama123,nama12345,sayang,bismillah,indonesia,rahasia"))
-		print((p+"\n["+k+"⭐"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
+		print((p+"\n["+h+"✔"+p+"]"+p+" Kata Sandi Default : "+k+"nama,nama123,nama12345,sayang,bismillah,indonesia,rahasia"))
+		print((p+"["+k+"⭐"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
 		while True:
 			f=input(p+"["+k+"❓"+p+"]"+p+" Pilih 👉"+k+" ")
 			if f=="":continue
