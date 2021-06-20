@@ -237,7 +237,7 @@ def menu():
     choose_menu()
 
 def choose_menu():
-	r=input(p+"\n["+k+"❓"+p+"]"+p+" Pilih : ")
+	r=input(p+"\n["+k+"❓"+p+"]"+p+" Pilih 👉"+k+" ")
 	if r=="":
 		print((p+"["+k+"❌"+p+"]"+p+" Maaf Salah"))
 		menu()
