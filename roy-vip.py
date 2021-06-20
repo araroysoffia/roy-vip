@@ -297,7 +297,7 @@ def publik():
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((p+"["+k+"⭐"+p+"]"+p+" Name 👉 "+op["name"]))
+			print((p+"["+k+"⭐"+p+"]"+p+" Name 👉 "+k+""+op["name"]))
 		except KeyError:
 			print((p+"["+k+"❌"+p+"]"+p+" ID Tidak Ditemukan"))
 			print((o+"\n»»» "+k+"ENTER Untuk Kembali" +o+"«««"))
@@ -311,7 +311,7 @@ def publik():
 			id.append(a["id"]+"<=>"+a["name"])
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
-		print((p+"["+k+"⭐"+p+"]"+p+" Total ID 👉 %s"%(len(id))))
+		print((p+"["+k+"⭐"+p+"]"+p+" Total ID 👉 "+k+"%s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
 		exit(p+"["+k+"❌"+p+"]"+p+" Error 👉 %s"%e)
