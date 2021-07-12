@@ -533,7 +533,6 @@ def generate(text):
 		else:
 			i=i.lower()
 			if len(i)==3 or len(i)==4 or len(i)==5:
-				results.append(i)
 				results.append(i+"123")
 				results.append(i+"12345")
 			else:
@@ -541,7 +540,6 @@ def generate(text):
 				results.append(i+"12345")
 				if "indonesia" in ips:
 					results.append("sayang")
-					results.append("bismillah")
 	return results
 
 ### BRUTE CRACK ###
